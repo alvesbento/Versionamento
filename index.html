@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Projeto HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background-color: #4c4eaf;
+            color: rgb(209, 15, 15);
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #d8e9d8;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            background: rgb(255, 255, 255);
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 0.8em;
+            color: #161616;
+        }
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        form {
+            margin-top: 20px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+    </style>
+    <script>
+        function showWelcomeMessage() {
+            alert("Bem-vindo ao meu projeto! Espero que você aproveite a experiência.");
+        }
+
+        function sendMessage() {
+            alert("Mensagem enviada com sucesso!");
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo ao Meu Projeto HTML</h1>
+    </header>
+
+    <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <main>
+        <section id="sobre">
+            <h2>Sobre Este Projeto</h2>
+            <p>Este projeto é uma demonstração de uma página HTML simples que inclui várias seções.</p>
+            <p>A página contém um cabeçalho, navegação, conteúdo principal e um rodapé.</p>
+            <button onclick="showWelcomeMessage()">Clique aqui para uma mensagem!</button>
+        </section>
+
+        <section id="projetos">
+            <h2>Meus Projetos</h2>
+            <ul>
+                <li>Projeto 1: Aplicativo de Tarefas</li>
+                <li>Projeto 2: Site de Receitas</li>
+                <li>Projeto 3: Portfólio Pessoal</li>
+                <li>Projeto 4: Jogo de Aventura</li>
+                <li>Projeto 5: Blog de Tecnologia</li>
+            </ul>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <form onsubmit="sendMessage(); return false;">
+                <label for="name">Seu Nome:</label>
+                <input type="text" id="name" required>
+
+                <label for="message">Sua Mensagem:</label>
+                <textarea id="message" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+            <p>Para mais informações, envie um e-mail para: <a href="mailto:exemplo@dominio.com">exemplo@dominio.com</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Meu Nome. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
